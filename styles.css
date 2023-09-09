@@ -2,6 +2,9 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Red Hat Display", sans-serif;
+  background: no-repeat url("./images/pattern-background-desktop.svg"),
+    hsl(225, 100%, 94%);
+  background-size: 100% 500px;
 }
 
 p {
@@ -15,9 +18,6 @@ a:hover {
 
 .container {
   height: 100%;
-  background: no-repeat url("./images/pattern-background-desktop.svg"),
-    hsl(225, 100%, 94%);
-  background-position: 0px -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,6 +135,9 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+  body {
+    background-size: 100% 250px;
+  }
   .card {
     width: 320px;
     height: 550px;
